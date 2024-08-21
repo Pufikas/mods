@@ -1,0 +1,9 @@
+{
+  "name": "Whiteholes",
+  "version_number": "1.0.1",
+  "website_url": "https://github.com/Pufikas/mods/bopl/Whiteholes",
+  "description": "Spawn whitehole instead of blackhole!",
+  "dependencies": [
+    "BepInEx-BepInExPack_H3VR-5.4.1101"
+  ]
+}
