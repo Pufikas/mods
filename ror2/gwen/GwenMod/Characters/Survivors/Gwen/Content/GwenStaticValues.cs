@@ -2,7 +2,7 @@
 
 namespace HenryMod.Survivors.Henry
 {
-    public static class HenryStaticValues
+    public static class GwenStaticValues
     {
         public const float swordDamageCoefficient = 2.8f;
 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace HenryMod.Survivors.Henry
 {
-    public static class HenryBuffs
+    public static class GwenBuffs
     {
         // armor buff gained during roll
         public static BuffDef armorBuff;

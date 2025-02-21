@@ -2,7 +2,7 @@
 
 namespace HenryMod.Survivors.Henry.Components
 {
-    internal class HenryWeaponComponent : MonoBehaviour
+    internal class GwenWeaponComponent : MonoBehaviour
     {
         private void Awake()
         {

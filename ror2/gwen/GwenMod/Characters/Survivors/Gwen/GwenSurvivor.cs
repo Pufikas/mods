@@ -9,35 +9,35 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GwenMod.Survivors.Gwen
+namespace HenryMod.Survivors.Henry
 {
     public class GwenSurvivor : SurvivorBase<GwenSurvivor>
     {
         //used to load the assetbundle for this character. must be unique
-        public override string assetBundleName => "gwenassetbundle"; //if you do not change this, you are giving permission to deprecate the mod
+        public override string assetBundleName => "gwentempassetbundle"; //if you do not change this, you are giving permission to deprecate the mod
 
         //the name of the prefab we will create. conventionally ending in "Body". must be unique
-        public override string bodyName => "GwenBody"; //if you do not change this, you get the point by now
+        public override string bodyName => "HenryBody"; //if you do not change this, you get the point by now
 
         //name of the ai master for vengeance and goobo. must be unique
-        public override string masterName => "GwenMonsterMaster"; //if you do not
+        public override string masterName => "HenryMonsterMaster"; //if you do not
 
         //the names of the prefabs you set up in unity that we will use to build your character
-        public override string modelPrefabName => "mdlGwen";
-        public override string displayPrefabName => "GwenDisplay";
+        public override string modelPrefabName => "mdlHenry";
+        public override string displayPrefabName => "HenryDisplay";
 
-        public const string GWEN_PREFIX = HenryPlugin.DEVELOPER_PREFIX + "_GWEN_";
+        public const string HENRY_PREFIX = GwenPlugin.DEVELOPER_PREFIX + "_GWEN_";
 
         //used when registering your survivor's language tokens
-        public override string survivorTokenPrefix => GWEN_PREFIX;
+        public override string survivorTokenPrefix => HENRY_PREFIX;
         
         public override BodyInfo bodyInfo => new BodyInfo
         {
             bodyName = bodyName,
-            bodyNameToken = GWEN_PREFIX + "NAME",
-            subtitleNameToken = GWEN_PREFIX + "SUBTITLE",
+            bodyNameToken = HENRY_PREFIX + "NAME",
+            subtitleNameToken = HENRY_PREFIX + "SUBTITLE",
 
-            characterPortrait = assetBundle.LoadAsset<Texture>("texGwenIcon"),
+            characterPortrait = assetBundle.LoadAsset<Texture>("texHenryIcon"),
             bodyColor = Color.white,
             sortPosition = 100,
 
@@ -48,7 +48,7 @@ namespace GwenMod.Survivors.Gwen
             healthRegen = 1.5f,
             armor = 0f,
 
-            jumpCount = 3,
+            jumpCount = 1,
         };
 
         public override CustomRendererInfo[] customRendererInfos => new CustomRendererInfo[]
@@ -56,7 +56,7 @@ namespace GwenMod.Survivors.Gwen
                 new CustomRendererInfo
                 {
                     childName = "SwordModel",
-                    material = assetBundle.LoadMaterial("matGwen"),
+                    material = assetBundle.LoadMaterial("matHenry"),
                 },
                 new CustomRendererInfo
                 {
@@ -68,9 +68,9 @@ namespace GwenMod.Survivors.Gwen
                 }
         };
 
-        public override UnlockableDef characterUnlockableDef => HenryUnlockables.characterUnlockableDef;
+        public override UnlockableDef characterUnlockableDef => GwenUnlockables.characterUnlockableDef;
         
-        public override ItemDisplaysBase itemDisplays => new HenryItemDisplays();
+        public override ItemDisplaysBase itemDisplays => new GwenItemDisplays();
 
         //set in base classes
         public override AssetBundle assetBundle { get; protected set; }
@@ -95,16 +95,16 @@ namespace GwenMod.Survivors.Gwen
         public override void InitializeCharacter()
         {
             //need the character unlockable before you initialize the survivordef
-            HenryUnlockables.Init();
+            GwenUnlockables.Init();
 
             base.InitializeCharacter();
 
-            HenryConfig.Init();
-            HenryStates.Init();
-            HenryTokens.Init();
+            GwenConfig.Init();
+            GwenStates.Init();
+            GwenTokens.Init();
 
-            HenryAssets.Init(assetBundle);
-            HenryBuffs.Init(assetBundle);
+            GwenAssets.Init(assetBundle);
+            GwenBuffs.Init(assetBundle);
 
             InitializeEntityStateMachines();
             InitializeSkills();
@@ -119,7 +119,7 @@ namespace GwenMod.Survivors.Gwen
         private void AdditionalBodySetup()
         {
             AddHitboxes();
-            bodyPrefab.AddComponent<HenryWeaponComponent>();
+            bodyPrefab.AddComponent<GwenWeaponComponent>();
             //bodyPrefab.AddComponent<HuntressTrackerComopnent>();
             //anything else here
         }
@@ -421,7 +421,7 @@ namespace GwenMod.Survivors.Gwen
             //Modules.Prefabs.CloneDopplegangerMaster(bodyPrefab, masterName, "Merc");
 
             //how to set up AI in code
-            HenryAI.Init(bodyPrefab, masterName);
+            GwenAI.Init(bodyPrefab, masterName);
 
             //how to load a master set up in unity, can be an empty gameobject with just AISkillDriver components
             //assetBundle.LoadMaster(bodyPrefab, masterName);
@@ -435,7 +435,7 @@ namespace GwenMod.Survivors.Gwen
         private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, R2API.RecalculateStatsAPI.StatHookEventArgs args)
         {
 
-            if (sender.HasBuff(HenryBuffs.armorBuff))
+            if (sender.HasBuff(GwenBuffs.armorBuff))
             {
                 args.armorAdd += 300;
             }

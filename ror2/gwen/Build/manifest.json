@@ -1,9 +1,9 @@
 {
-    "name": "Gwen",
-    "author": "Pufikas",
-    "version_number": "0.0.1",
+    "name": "NotHenry",
+    "author": "NotRob",
+    "version_number": "0.0.0",
     "website_url": "",
-    "description": "I like gwen",
+    "description": "I have not changed the manifest and now my mod will be deprecated",
     "dependencies": [
         "bbepis-BepInExPack-5.4.1905",
         "RiskofThunder-R2API_Core-5.0.3",

@@ -2,7 +2,7 @@
 
 namespace HenryMod.Survivors.Henry
 {
-    public static class HenryStates
+    public static class GwenStates
     {
         public static void Init()
         {

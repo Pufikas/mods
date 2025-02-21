@@ -3,7 +3,7 @@ using HenryMod.Modules;
 
 namespace HenryMod.Survivors.Henry
 {
-    public static class HenryConfig
+    public static class GwenConfig
     {
         public static ConfigEntry<bool> someConfigBool;
         public static ConfigEntry<float> someConfigFloat;

@@ -6,7 +6,7 @@ using RoR2.Projectile;
 
 namespace HenryMod.Survivors.Henry
 {
-    public static class HenryAssets
+    public static class GwenAssets
     {
         // particle effects
         public static GameObject swordSwingEffect;
