@@ -14,17 +14,17 @@ namespace HenryMod.Survivors.Henry
     public class GwenSurvivor : SurvivorBase<GwenSurvivor>
     {
         //used to load the assetbundle for this character. must be unique
-        public override string assetBundleName => "gwentempassetbundle"; //if you do not change this, you are giving permission to deprecate the mod
+        public override string assetBundleName => "gwenassetbundle";
 
         //the name of the prefab we will create. conventionally ending in "Body". must be unique
-        public override string bodyName => "HenryBody"; //if you do not change this, you get the point by now
+        public override string bodyName => "GwenBody";
 
         //name of the ai master for vengeance and goobo. must be unique
-        public override string masterName => "HenryMonsterMaster"; //if you do not
+        public override string masterName => "GwenMonsterMaster";
 
         //the names of the prefabs you set up in unity that we will use to build your character
-        public override string modelPrefabName => "mdlHenry";
-        public override string displayPrefabName => "HenryDisplay";
+        public override string modelPrefabName => "GwenPrefab";
+        public override string displayPrefabName => "Gwen";
 
         public const string HENRY_PREFIX = GwenPlugin.DEVELOPER_PREFIX + "_GWEN_";
 
@@ -37,7 +37,7 @@ namespace HenryMod.Survivors.Henry
             bodyNameToken = HENRY_PREFIX + "NAME",
             subtitleNameToken = HENRY_PREFIX + "SUBTITLE",
 
-            characterPortrait = assetBundle.LoadAsset<Texture>("texHenryIcon"),
+            characterPortrait = assetBundle.LoadAsset<Texture>("gwen_w"),
             bodyColor = Color.white,
             sortPosition = 100,
 

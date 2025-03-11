@@ -29,10 +29,10 @@ namespace HenryMod.Survivors.Henry
             string outro = "..and so he left, searching for a new identity.";
             string outroFailure = "..and so he vanished, forever a blank slate.";
 
-            Language.Add(prefix + "NAME", "Henry");
+            Language.Add(prefix + "NAME", "Gwen");
             Language.Add(prefix + "DESCRIPTION", desc);
-            Language.Add(prefix + "SUBTITLE", "The Chosen One");
-            Language.Add(prefix + "LORE", "sample lore");
+            Language.Add(prefix + "SUBTITLE", "The Hallowed Seamstress");
+            Language.Add(prefix + "LORE", "real big lore");
             Language.Add(prefix + "OUTRO_FLAVOR", outro);
             Language.Add(prefix + "OUTRO_FAILURE", outroFailure);
 
@@ -41,8 +41,8 @@ namespace HenryMod.Survivors.Henry
             #endregion
 
             #region Passive
-            Language.Add(prefix + "PASSIVE_NAME", "Henry passive");
-            Language.Add(prefix + "PASSIVE_DESCRIPTION", "Sample text.");
+            Language.Add(prefix + "PASSIVE_NAME", "Gwen passive");
+            Language.Add(prefix + "PASSIVE_DESCRIPTION", "Gwen's basic attacks heals for ");
             #endregion
 
             #region Primary

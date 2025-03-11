@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 3000255487
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 503398de113d16a15f9f4e6ec51bcd9d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc2f2607855b40ffc395fe7f1d83d588
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/GwenAssets/GwenBundle/Icons/gwen_w.dds
+- Assets/GwenAssets/GwenBundle/Icons/gwen_r2.dds
+- Assets/GwenAssets/GwenBundle/Icons/gwen_r3.dds
+- Assets/GwenAssets/GwenBundle/Icons/gwen_q.dds
+- Assets/GwenAssets/GwenBundle/Icons/gwen_e.dds
+- Assets/GwenAssets/GwenBundle/Icons/gwen_passive.dds
+- Assets/GwenAssets/FBX/gwen2.fbx
+- Assets/GwenAssets/GwenBundle/Icons/gwen_r.dds
+Dependencies: []
