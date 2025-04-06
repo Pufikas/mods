@@ -1,0 +1,4 @@
+- v1.0.1:
+	- Added Yuuka
+	- Added Inaba
+	- Added LostWorldFlan

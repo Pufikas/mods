@@ -1,0 +1,9 @@
+{
+  "name": "Touhou_Fumos",
+  "description": "Adds plushes from touhou as valuables",
+  "version_number": "1.0.1",
+  "dependencies": [
+    "Zehs-REPOLib-2.0.0"
+  ],
+  "website_url": ""
+}
