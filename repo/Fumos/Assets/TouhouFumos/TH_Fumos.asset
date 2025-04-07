@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Touhou_Fumos
   _author: Pufikas
-  _version: 1.0.1
+  _version: 1.0.2
   _description: Adds plushes from touhou as valuables
   _websiteUrl: 
   _dependencies:

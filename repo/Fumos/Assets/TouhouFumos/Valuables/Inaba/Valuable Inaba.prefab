@@ -32,6 +32,7 @@ Transform:
   - {fileID: 4586999954516553154}
   - {fileID: 4898129487898757}
   - {fileID: 283109284100074480}
+  - {fileID: 6983305217204311381}
   m_Father: {fileID: 4415484021018859}
   m_LocalEulerAnglesHint: {x: -0, y: 90, z: 0}
 --- !u!1 &1501293418309304
@@ -63,8 +64,8 @@ Transform:
   m_GameObject: {fileID: 1501293418309304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.315, y: 0.305, z: -0.002}
-  m_LocalScale: {x: 0.13677524, y: 0.2030702, z: 0.13364}
+  m_LocalPosition: {x: 0.315, y: 0.2674, z: -0.002}
+  m_LocalScale: {x: 0.10578334, y: 0.13611388, z: 0.11344855}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4883198163728865}
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1690142c2a19245951fcb1f4197fef93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durabilityPreset: {fileID: 11400000, guid: 120a8152fd533cd4988445c06c1c32f4, type: 2}
+  durabilityPreset: {fileID: 11400000, guid: 8485cd18e062fb44481b2d750163c4cf, type: 2}
   valuePreset: {fileID: 11400000, guid: 6dec6a7b271712c4a8d5d98e247d09de, type: 2}
   physAttributePreset: {fileID: 11400000, guid: 3a6b65597108cb3448dde027bc9cd85b, type: 2}
   audioPreset: {fileID: 11400000, guid: 570363441487dab4b891e2c53cbeee46, type: 2}
@@ -286,7 +287,19 @@ MonoBehaviour:
         m_CallState: 2
   onImpactMedium:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -6403630007124570773}
+        m_TargetAssemblyTypeName: FrogTrap, Assembly-CSharp
+        m_MethodName: FrogJump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onImpactHeavy:
     m_PersistentCalls:
       m_Calls: []
@@ -519,6 +532,15 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
+      time: -0.2858423
+      value: 0.162148
+      inSlope: -0.57619244
+      outSlope: -0.57619244
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 0
       value: 0
       inSlope: 2
@@ -528,10 +550,46 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
+      time: 0.066144526
+      value: 0.6871725
+      inSlope: 0.2735223
+      outSlope: 0.2735223
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 0.10056335
       value: 0.49811554
       inSlope: 1.4267484
       outSlope: 1.4267484
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4257634
+      value: 0.49233267
+      inSlope: 0.27208593
+      outSlope: 0.27208593
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4830101
+      value: 0.7127696
+      inSlope: -0.5438096
+      outSlope: -0.5438096
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.73525745
+      value: 0.87797517
+      inSlope: 3.30603
+      outSlope: 3.30603
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -816,3 +874,87 @@ MonoBehaviour:
   CustomVolume: 0.5
   HasCustomFalloff: 0
   CustomFalloff: 0.8
+--- !u!1 &7203338629879539557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6983305217204311381}
+  - component: {fileID: 6126425300424462355}
+  - component: {fileID: 6014823094727025787}
+  - component: {fileID: 7099061720552714190}
+  m_Layer: 16
+  m_Name: Semi Capsule Collider
+  m_TagString: Phys Grab Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6983305217204311381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203338629879539557}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.3213, y: 0.3472, z: -0.0003}
+  m_LocalScale: {x: 0.15455164, y: 0.11594555, z: 0.19676827}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4883198163728865}
+  m_LocalEulerAnglesHint: {x: -180, y: -0, z: 180}
+--- !u!136 &6126425300424462355
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203338629879539557}
+  m_Material: {fileID: 13400000, guid: e39e69273d8469444a3a738aa701dfbe, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6014823094727025787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203338629879539557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235dc37e6afa80f0ab98b522005790b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawGizmos: 1
+  gizmoTransparency: 1
+--- !u!114 &7099061720552714190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203338629879539557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1df5370f7af74f11d71ad866fd0a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderID: 0

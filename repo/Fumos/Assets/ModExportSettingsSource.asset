@@ -30,6 +30,7 @@ MonoBehaviour:
   _mod: {fileID: 11400000, guid: db910e47acc8f3542bca459cb3dc9bfc, type: 2}
   _extraFiles:
   - {fileID: 2800000, guid: 53b0b804e1e5b414784cf1ee9ec15bf8, type: 3}
+  - {fileID: 4900000, guid: 5c20f9a8fba0618488e3f63d4352a4c2, type: 3}
 --- !u!114 &8243884194928185955
 MonoBehaviour:
   m_ObjectHideFlags: 0
