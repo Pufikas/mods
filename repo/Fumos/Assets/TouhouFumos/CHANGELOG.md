@@ -1,4 +1,16 @@
-- v1.0.2
+- v2.0.0:
+	- Added Koishi
+	- Added LostWordRemilia
+	- Added Marisa
+	- Added Reimu
+	- Added Satori
+	- Added Shion
+	- Added Youmu
+	- Added Yuuka
+	- Added Yuyuko
+	- Tried to fix Inaba hops (still buggy)
+
+- v1.0.2:
 	- Removed Yuuka (due to high poly count causing low frame rate)
 	- Added Cirno in Ice cube
 	- Added Flan
@@ -7,4 +19,4 @@
 - v1.0.1:
 	- Added Yuuka
 	- Added Inaba
-	- Added LostWorldFlan
+	- Added LostWordFlan

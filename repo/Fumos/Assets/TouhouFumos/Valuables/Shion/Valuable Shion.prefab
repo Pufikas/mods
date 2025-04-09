@@ -77,9 +77,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   durabilityPreset: {fileID: 11400000, guid: 120a8152fd533cd4988445c06c1c32f4, type: 2}
-  valuePreset: {fileID: 11400000, guid: d1fb311fa3cf5fd4ab5fc671e79054c8, type: 2}
+  valuePreset: {fileID: 11400000, guid: 6dec6a7b271712c4a8d5d98e247d09de, type: 2}
   physAttributePreset: {fileID: 11400000, guid: b4c2a433ed660184f9e8148bfaa2ebb3, type: 2}
-  audioPreset: {fileID: 11400000, guid: f55047dcd126c954780dda3419f9c55f, type: 2}
+  audioPreset: {fileID: 11400000, guid: 966c19ea1f565774a9db0897fc43f966, type: 2}
   audioPresetPitch: 1
   particleColors:
     serializedVersion: 2
@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -3868909421228506237, guid: 8fb5b869d1978c843848eb0a2c503fba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a7d72f9e0fcc3d468406ab6188c1f5f, type: 2}
     - target: {fileID: 919132149155446097, guid: 8fb5b869d1978c843848eb0a2c503fba, type: 3}
       propertyPath: m_Name
       value: shion

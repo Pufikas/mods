@@ -1,10 +1,10 @@
-## All fumos have something unique to them, for more detail look into Wiki section.
+Adds fumos as valuables to appear.
 
-If you are looking for *normal fumos* consider using Pekodayo [Fumos](https://thunderstore.io/c/repo/p/Pekodayo/Fumos/) mod.
+Every fumo will have later or sooner a unique effect tied to them.
 
+## Check latest update in [CHANGELOG](https://thunderstore.io/c/repo/p/Pufikas/Touhou_Fumos/changelog/)
 
-
-## Models taken from Sketchfab, credits to, for:
+## Models are taken from Sketchfab, credits to, for:
 
 - Lost Word Flandre Scarlet "東方 Project - lost word Flandre Scarlet (3D Scan)" (https://skfb.ly/oPLIz) by DAsh9986 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 

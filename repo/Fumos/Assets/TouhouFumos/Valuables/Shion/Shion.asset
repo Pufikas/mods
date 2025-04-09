@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 1521619359, guid: eaad9ddbea6e2e2419c8fe5b9de517f3, type: 3}
   m_Name: Shion
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
+  _prefab: {fileID: 114031483692489124, guid: a741f6177e6dc534eaa6b5a871027271, type: 3}
   _valuablePresets:
   - Valuables - Generic
