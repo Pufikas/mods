@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Touhou_Fumos
   _author: Pufikas
-  _version: 2.0.0
-  _description: Adds plushes from touhou as valuables with unique effects
+  _version: 2.0.1
+  _description: Adds plushes from touhou as valuables with some having unique effects
   _websiteUrl: 
   _dependencies:
   - Zehs-REPOLib-2.0.0

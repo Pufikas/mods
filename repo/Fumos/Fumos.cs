@@ -42,4 +42,37 @@ public class Fumos : BaseUnityPlugin
     {
         // Code that runs every frame goes here
     }
+
+    public class RotateTowardsPlayer : MonoBehaviour
+    {
+        private Transform playerTransform;
+
+        void Start()
+        {
+            // Find the player by tag (make sure your player has the "Player" tag)
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+            }
+        }
+
+        void Update()
+        {
+            if (playerTransform != null)
+            {
+                // Calculate direction to player
+                Vector3 direction = playerTransform.position - transform.position;
+
+                // Only rotate on the Y axis (for typical ground-based enemies)
+                direction.y = 0;
+
+                // Rotate towards the player
+                if (direction != Vector3.zero)
+                {
+                    transform.rotation = Quaternion.LookRotation(direction);
+                }
+            }
+        }
+    }
 }

@@ -1,3 +1,7 @@
+- v2.0.1:
+	- Removed Inaba's hops to avoid enemy ai being stuck
+	- Added Satori effect
+
 - v2.0.0:
 	- Added Koishi
 	- Added LostWordRemilia

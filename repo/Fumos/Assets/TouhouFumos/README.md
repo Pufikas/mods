@@ -1,6 +1,6 @@
 Adds fumos as valuables to appear.
 
-Every fumo will have later or sooner a unique effect tied to them.
+Will try to make every fumo have a unique (not guaranteed).
 
 ## Check latest update in [CHANGELOG](https://thunderstore.io/c/repo/p/Pufikas/Touhou_Fumos/changelog/)
 

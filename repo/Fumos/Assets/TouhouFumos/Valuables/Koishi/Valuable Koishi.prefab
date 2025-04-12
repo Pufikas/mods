@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 114264334153352412}
   - component: {fileID: 54480110087864499}
   - component: {fileID: 114805885185098950}
+  - component: {fileID: 109951833470880714}
   m_Layer: 16
   m_Name: Valuable Koishi
   m_TagString: Phys Grab Object
@@ -160,7 +161,19 @@ MonoBehaviour:
       m_Calls: []
   onBreakMedium:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8016571521733090014}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: LookAt
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onBreakHeavy:
     m_PersistentCalls:
       m_Calls: []
@@ -260,6 +273,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a15e1c781475aa01b4927595581aa78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &109951833470880714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136845217060944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6ddd7a5d75aae227f7359a6bec47fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1369583121214047
